@@ -1,0 +1,104 @@
+.site-container {
+  .header {
+    padding-top: 25px;
+    width: 100%;
+    background-image: url("../img/header_main-img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 1920 / 832;
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 55px;
+      height: 40px;
+    }
+
+    &__btn {
+      position: relative;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 16px 10px 32px;
+      font-size: 14px;
+      line-height: 18px;
+      color: var(--white);
+      background-color: var(--light-green);
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        width: 14px;
+        height: 15px;
+        background-image: url("../img/svg/cart.svg");
+      }
+
+      @extend %Inter-600;
+    }
+
+    &__main {
+      padding-top: clamp(1.875rem, 4.321vw + 1.065rem, 6.25rem);
+      padding-left: 20px;
+    }
+
+    &__title {
+      margin-bottom: clamp(0.375rem, 2.593vw - 0.111rem, 3rem);
+      max-width: 540px;
+
+      // font-family: 'Fredoka', sans-serif;
+      font-weight: 500;
+      font-size: clamp(1.25rem, 2.716vw + 0.741rem, 4rem);
+      line-height: clamp(1.625rem, 3.765vw - 0.081rem, 4.438rem);
+      text-transform: uppercase;
+      color: var(--light-gray);
+
+      @extend %Fredoka-500;
+    }
+
+    &__text {
+      margin-bottom: clamp(0.375rem, 2.593vw - 0.111rem, 3rem);
+      max-width: 540px;
+      font-size: 16px;
+      line-height: 34px;
+      color: var(--light-gray);
+
+      @extend %Inter-400;
+    }
+
+    &__buttons {
+      display: flex;
+      float: left;
+      margin-bottom: 20px;
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .site-container {
+    .header {
+      &__book {
+        padding: 10px 9px;
+        font-size: 13px;
+      }
+
+      &__contact {
+        padding: 9px 45px 9px 24px;
+        font-size: 13px;
+      }
+
+      &__text {
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+}
+
+// @media (max-width: 575.98px) {}
+
+// @media (max-width: 991.98px) {}
+
+// @media (max-width: 1199.98px) {}

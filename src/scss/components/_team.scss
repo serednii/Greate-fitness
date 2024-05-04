@@ -1,0 +1,28 @@
+.site-container {
+  .team {
+    padding: 96px 0 96px;
+    background-color: var(--background);
+
+    &__text {
+      margin-bottom: 48px;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: center;
+      color: var(--light-gray);
+
+      @extend %Inter-400;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 48px;
+      gap: 48px;
+    }
+
+    &__img {
+      border-radius: 25px;
+    }
+  }
+}

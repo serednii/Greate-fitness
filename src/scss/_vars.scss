@@ -1,0 +1,69 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+
+
+%Inter-500 {
+  font-family: "Inter-Medium", sans-serif;
+  font-weight: 500;
+}
+
+%Inter-400 {
+  font-family: "Inter-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%Inter-600 {
+  font-family: "Inter-SemiBold", sans-serif;
+  font-weight: 600;
+}
+
+%Inter-300 {
+  font-family: "Inter-Light", sans-serif;
+  font-weight: 300;
+}
+
+%Inter-700 {
+  font-family: "Inter-Bold", sans-serif;
+  font-weight: 700;
+}
+
+%Roboto-400 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%Roboto-700 {
+  font-family: "Roboto-Bold", sans-serif;
+  font-weight: 700;
+}
+
+%Fredoka-500 {
+  font-family: "Fredoka-Medium", sans-serif;
+  font-weight: 500;
+}
+
+
+:root {
+
+  --index: calc(1vw + 1vh);
+  // base
+  --font-family: "Inter", sans-serif;
+  --content-width: 1920px;
+  --container-offset: 10px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --content-inner-width: 1320px;
+  --container-inner-offset: 10px;
+  --container-inner-width: calc(var(--content-inner-width) + (var(--container-inner-offset) * 2));
+
+  // colors
+  --white: #fff;
+  --black: #000;
+  --gray: #343A40;
+  --light-gray: #495057;
+  --light-green: #5F6F52;
+  --light: #F6F5F4;
+  --line: #CED4DA;
+  --milk: #F8F9FA;
+  --background: #B6B2A612;
+}

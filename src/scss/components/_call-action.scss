@@ -1,0 +1,73 @@
+.site-container {
+  .call-action {
+    margin-bottom: 48px;
+
+    &__wrapper {
+      padding: 96px 25px 96px 20px;
+      width: 100%;
+      min-height: 547px;
+      background-image: url("../img/call-action.jpg");
+      background-size: cover;
+    }
+
+    &__content {
+      float: right;
+      border-radius: 35px;
+      padding: 48px;
+      max-width: 917px;
+      text-align: left;
+      background-color: var(--white);
+    }
+
+    &__title {
+      margin-bottom: 25px;
+      font-size: clamp(1.75rem, 1.481vw + 1.472rem, 3.25rem);
+      color: var(--gray);
+
+      @extend %Fredoka-500;
+    }
+
+    &__subtitle {
+      margin-bottom: 35px;
+      max-width: 822px;
+      font-size: 16px;
+      line-height: 28px;
+      color: var(--gray);
+
+      @extend %Inter-400;
+    }
+
+    &__buttons {
+      display: flex;
+      float: left;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .site-container {
+    .call-action {
+      &__wrapper {
+        padding: 40px 20px 40px 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .site-container {
+    .call-action {
+      &__wrapper {
+        padding: 20px 10px 20px 10px;
+        min-height: 600px;
+      }
+
+      &__content {
+        padding: 20px;
+        text-align: center;
+      }
+    }
+  }
+}

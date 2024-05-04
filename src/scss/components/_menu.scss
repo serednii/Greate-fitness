@@ -1,0 +1,156 @@
+.burger {
+  display: none;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+}
+
+.menu-link {
+  border: none;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--gray);
+  background-color: transparent;
+  transition: font-weight 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    font-weight: 600;
+  }
+
+  @extend %Inter-500;
+}
+
+.submenu-list {
+  padding-left: 7px;
+  text-align: left;
+}
+
+.submenu-item {
+  margin-bottom: 10px;
+
+  a {
+    display: inline-block;
+    border: none;
+    width: max-content;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--gray);
+    background-color: transparent;
+    transition: font-weight 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: 600;
+    }
+
+    @extend %Inter-400;
+  }
+}
+
+.submenu-click {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('../img/svg/arrow-down.svg');
+    width: 14px;
+    height: 14px;
+    background-size: cover;
+    right: -13px;
+    transition: transform .3s ease-in-out;
+  }
+}
+
+.submenu-click.open-click {
+
+  &::before {
+    transform: rotate(180deg);
+  }
+}
+
+.submenu-click-parent {
+  position: relative;
+}
+
+.submenu-click-list {
+  position: absolute;
+  overflow: hidden;
+  height: 0;
+}
+
+.submenu-click-list.open-click {
+  // transform: scaleY(1) translateY(0%);
+  // opacity: 1;
+  height: initial;
+
+  // animation: slideMenu .3s;
+}
+
+// @keyframes slideMenu {
+
+//   0% {
+//     height: 0px;
+//   }
+
+//   100% {
+//     .submenu-click-list {
+//       height: 160px;
+//     }
+//   }
+
+// }
+
+@media (max-width: 991.98px) {
+  .burger {
+    right: 22px;
+    top: 29px;
+    z-index: 200;
+    display: block;
+  }
+
+  .menu-list {
+    position: fixed;
+    left: 10px;
+    top: 0;
+    z-index: 100;
+    display: block;
+    padding-left: 15px;
+    width: calc(100vw - 20px);
+    background-color: var(--white);
+    transform: translateY(-110%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu-list.menu--active {
+    transform: translateY(0);
+  }
+
+  .overlay.overlay--active {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--milk);
+    opacity: 0.4;
+  }
+
+  .menu-item {
+    width: 100% !important;
+  }
+
+  .menu-link {
+    padding-left: 0;
+  }
+
+
+  .submenu-click-list.open-click {
+    position: initial;
+  }
+
+}

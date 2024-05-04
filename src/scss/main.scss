@@ -1,0 +1,19 @@
+// базовые подключения
+@import "mixins/font-face";
+@import "fonts";
+@import "vars";
+// // // @import "bootstrap.min";
+@import "mixins";
+@import "settings";
+@import "mixins/validate";
+@import "mixins/seting";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/logo";
+@import "./components/footer";
+@import "./components/menu";
+@import "./components/services";
+@import "./components/classes";
+@import "./components/team";
+@import "./components/call-action";

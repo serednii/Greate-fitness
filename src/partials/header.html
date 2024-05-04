@@ -1,0 +1,61 @@
+<header class="header">
+  <!-- @include('./setting.html') -->
+  <div class="header__top container-inner">
+    <a class="logo" href="index.html">
+      <img src="./img/svg/primary-logo.svg" alt="logo">
+    </a>
+    <nav class="header__menu menu">
+      <button class="burger menu__btn" data-burger="" aria-label="Open menu" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
+      <ul class="menu-list" data-menu>
+        <li class="menu-item" data-menu-item>
+          <a class="menu-link" href="index.html">Home</a>
+        </li>
+        <li class="menu-item submenu-click-parent">
+          <button class="menu-link submenu-click" aria-expanded="false" aria-haspopup="menu-services"
+            aria-controls="Services">Services</button>
+          <ul class="submenu-list submenu-click-list" role="menu-services" id="Services">
+            <li class="submenu-item" data-menu-item><a href="#">Spa Area</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Changing Rooms</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Free Lessons</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Free Rugs</a></li>
+          </ul>
+        </li>
+        <li class="menu-item submenu-click-parent">
+          <button class="menu-link submenu-click" aria-expanded="false" aria-haspopup="menu=facility"
+            aria-controls="Facility">Our Facility</button>
+          <ul class="submenu-list submenu-click-list" role="menu-facility" id="Facility">
+            <li class="submenu-item" data-menu-item><a href="#">Spa Area</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Changing Rooms</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Free Lessons</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Free Rugs</a></li>
+          </ul>
+        </li>
+        <li class="menu-item" data-menu-item>
+          <a class="menu-link" href="#">About</a>
+        </li>
+        <li class="menu-item" data-menu-item>
+          <a class="menu-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__shop">
+      <button class="header__btn">
+        Shop Now
+      </button>
+    </div>
+  </div>
+
+  <div class="header__main container-inner">
+    <h1 class="header__title"> Yoga First Fitness Always</h1>
+    <p class="header__text">Welcome to Great Fitness, Los Angeles' premier destination for yoga and fitness enthusiasts.
+      Nestled in the vibrant heart of the city, we offer a sanctuary where mind, body, and spirit align.</p>
+    <div class="header__buttons">
+      <button class="header__book button">Book A Session</button>
+      <button class="header__contact button__contact">Contact Us</button>
+    </div>
+  </div>
+
+
+</header>

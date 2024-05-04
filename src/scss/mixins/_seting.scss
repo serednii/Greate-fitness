@@ -1,0 +1,71 @@
+.setting {
+  position: fixed;
+  z-index: 10000;
+  border-radius: 3px;
+  padding: 5px;
+  width: 100%;
+  max-width: 150px;
+  font-size: 0.8rem;
+  background-color: antiquewhite;
+
+  button,
+  p {
+    border-radius: 5px;
+    padding: 2px;
+  }
+
+  .header-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  .open {}
+}
+
+.setting-block {
+  display: none;
+}
+
+.setting-block.open {
+  display: block;
+}
+
+.setting-font__family {
+  position: relative;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 3rem;
+  background-color: coral;
+}
+
+.setting-font__number {
+  position: absolute;
+  right: 7px;
+  top: 36px;
+  display: block;
+  text-align: center;
+  background-color: beige;
+}
+
+.setting__select-text {
+  margin-bottom: 10px;
+}
+
+.buttons-family {
+  margin-bottom: 10px;
+}
+
+.setting-font__weight,
+.setting-size,
+.buttons-style {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.setting .prev,
+.setting .next,
+.setting .normal,
+.setting .italic {
+  min-width: 50px;
+}

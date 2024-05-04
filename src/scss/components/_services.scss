@@ -1,0 +1,225 @@
+.site-container {
+  .services {
+    overflow: hidden;
+    padding: 96px 0 48px;
+    background-color: var(--light);
+
+    &__wrapper {
+      position: relative;
+    }
+
+    &__list {
+      position: relative;
+      margin-bottom: 45px;
+    }
+
+    &__item {
+      border-radius: 30px;
+      padding: 35px;
+      width: 294px;
+      text-align: center;
+      background-color: var(--white);
+      box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.14);
+
+      &:hover {
+        .services__item__hide {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__item-img {
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+
+    &__item-title {
+      margin-bottom: 25px;
+      font-size: 24px;
+      color: var(--gray);
+
+      @extend %Inter-700;
+    }
+
+    &__item-subtitle {
+      margin-bottom: 35px;
+      max-width: 262px;
+      font-size: 16px;
+      line-height: 28px;
+      color: var(--black);
+
+      @extend %Inter-400;
+    }
+
+    &__item-button {
+      border: 2px solid var(--light-green);
+      border-radius: 10px;
+      padding: 8px;
+      font-size: 15px;
+      color: var(--light-green);
+      background-color: transparent;
+
+      @extend %Inter-600;
+    }
+
+    &__item__hide {
+      position: absolute;
+      left: -30px;
+      top: -25px;
+      border-radius: 30px;
+      padding: 95px 35px;
+      width: 350px;
+      height: 460px;
+      background-color: var(--light-green);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      box-shadow: -14.35px 13.93px 13px 0px rgba(0, 0, 0, 5.5%);
+    }
+
+    &__item__hide-title {
+      margin-bottom: 35px;
+      font-size: 28px;
+      color: var(--milk);
+
+      @extend %Inter-700;
+    }
+
+    &__item__hide-subtitle {
+      margin-bottom: 45px;
+      font-size: 16px;
+      color: var(--milk);
+
+      @extend %Inter-400;
+    }
+
+    &__item__hide-button {
+      border: none;
+      border-radius: 6px;
+      padding: 16px 24px;
+      font-size: 16px;
+      color: var(--light-green);
+      background-color: var(--white);
+
+      @extend %Inter-600;
+    }
+
+    .swiper-container {
+      width: 80%;
+    }
+
+    .swiper-wrapper {
+      margin-left: 200px;
+    }
+
+    .swiper-slide {
+      width: 294px !important;
+
+      /* задаємо ширину карточки */
+    }
+
+    .swiper-button {
+      position: absolute;
+      right: 48px;
+      display: flex;
+      gap: 25px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      button {
+        border: none;
+        width: 45px;
+        height: 45px;
+        background-color: transparent;
+      }
+    }
+
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled {
+      svg {
+        g {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .site-container {
+    .services {
+      .swiper-wrapper {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .site-container {
+    .services {
+      &__item {
+        padding: 20px;
+        width: 260px;
+      }
+
+      &__item__hide {
+        left: 3px;
+        top: -10px;
+        padding: 50px 25px;
+        width: 290px;
+        height: 400px;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 380px) {
+  .site-container {
+    .services {
+      .swiper-slide {
+        width: 260px !important;
+      }
+
+      &__item-img {
+        margin-bottom: 15px;
+        max-width: 24%;
+      }
+
+      &__item-title {
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+
+      &__item-subtitle {
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 23px;
+      }
+
+      &__item {
+        padding: 20px;
+        margin-right: 38px !important;
+      }
+
+      &__item__hide {
+        left: 1px;
+        top: -34px;
+        padding: 50px 20px;
+        width: 261px;
+        height: 360px;
+      }
+
+      &__item__hide-title {
+        margin-bottom: 30px;
+        font-size: 18px;
+      }
+
+      &__item__hide-subtitle {
+        font-size: 14px;
+      }
+    }
+  }
+}

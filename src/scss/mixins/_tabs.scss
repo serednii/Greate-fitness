@@ -1,0 +1,47 @@
+@mixin tabs-opacity {
+
+  .tabs__nav-btn--active {
+    background-color: #ff0001;
+  }
+
+  .tabs__content {
+    position: relative;
+  }
+
+  .tabs__panel {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .tabs__panel+.tabs__panel {
+    position: absolute;
+    top: 0;
+  }
+
+  .tabs__panel--active {
+    opacity: 1;
+  }
+
+
+}
+
+
+
+@mixin tabs-display {
+
+  .tabs__nav-btn--active {
+    background-color: #ff0001;
+  }
+
+
+
+  .tabs__panel {
+    display: none;
+  }
+
+  .tabs__panel--active {
+    display: block;
+  }
+
+
+}
