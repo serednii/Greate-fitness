@@ -30,7 +30,7 @@
       line-height: 16px;
       color: var(--gray);
       background-color: transparent;
-      transition: font-weight 0.3s ease-in-out;
+      // transition: font-weight 0.3s ease-in-out;
       cursor: pointer;
 
       &:hover {
@@ -50,6 +50,14 @@
     &__bottom-item {
       width: 22px;
       height: 28px;
+
+      img {
+        transition: scale 0.2s ease-in-out;
+      }
+
+      img:hover {
+        scale: 1.2;
+      }
     }
 
     .copyright {

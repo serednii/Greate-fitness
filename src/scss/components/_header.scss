@@ -25,6 +25,12 @@
       color: var(--white);
       background-color: var(--light-green);
       cursor: pointer;
+      transition: color 0.3s, background-color 0.3s;
+
+      &:hover {
+        color: var(--gray);
+        background-color: transparent;
+      }
 
       &::before {
         content: "";
