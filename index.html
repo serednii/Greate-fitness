@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="@description">
+  <meta name="keywords" content="@keywords">
+  <meta name="robots" content="all, index, follow">
+  <meta name="googlebot" content="all, index, follow">
+  <meta name="msapplication-TileColor" content="#ff0000">
+  <meta name="theme-color" content="#00FFFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#14592a">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Great Fitness</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="css/vendor.css?v=0.1.15">
+  <link rel="stylesheet" href="css/main.css?v=0.1.15">
+  <script defer src="js/main.js"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJW6WRK03J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-YJW6WRK03J');
+  </script>
+
+</head>
+
+<body class="page__body">
+  <div class="site-container container">
+    <header class="header">
+
+  <div class="header__top container-inner">
+    <a class="logo" href="index.html">
+      <img src="./img/svg/primary-logo.svg" alt="logo">
+    </a>
+    <nav class="header__menu menu">
+      <button class="burger menu__btn" data-burger="" aria-label="Open menu" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
+      <ul class="menu-list" data-menu>
+        <li class="menu-item" data-menu-item>
+          <a class="menu-link" href="index.html">Home</a>
+        </li>
+        <li class="menu-item submenu-click-parent">
+          <button class="menu-link submenu-click" aria-expanded="false" aria-controls="Services">Services</button>
+          <ul class="submenu-list submenu-click-list" id="Services">
+            <li class="submenu-item" data-menu-item><a href="#">Spa Area</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Changing Rooms</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Free Lessons</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Free Rugs</a></li>
+          </ul>
+        </li>
+        <li class="menu-item submenu-click-parent">
+          <button class="menu-link submenu-click" aria-expanded="false" aria-controls="Facility">Our Facility</button>
+          <ul class="submenu-list submenu-click-list" id="Facility">
+            <li class="submenu-item" data-menu-item><a href="#">Spa Area</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Changing Rooms</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Free Lessons</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Free Rugs</a></li>
+          </ul>
+        </li>
+        <li class="menu-item" data-menu-item>
+          <a class="menu-link" href="#">About</a>
+        </li>
+        <li class="menu-item" data-menu-item>
+          <a class="menu-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__shop">
+      <button class="header__btn">
+        Shop Now
+      </button>
+    </div>
+  </div>
+
+  <div class="header__main container-inner">
+    <h1 class="header__title"> Yoga First Fitness Always</h1>
+    <p class="header__text">Welcome to Great Fitness, Los Angeles' premier destination for yoga and fitness enthusiasts.
+      Nestled in the vibrant heart of the city, we offer a sanctuary where mind, body, and spirit align.</p>
+    <div class="header__buttons">
+      <button class="header__book button">Book A Session</button>
+      <button class="header__contact button__contact">Contact Us</button>
+    </div>
+  </div>
+
+</header>
+
+    <main class="main">
+      <section class="services">
+        <div class="container">
+          <div class="services__wrapper">
+            <h2 class="services__title title">
+              Our Services
+            </h2>
+            <p class="services__subtitle subtitle">
+              Sub Heading To Explain More
+            </p>
+            <div class="swiper-container">
+              <ul class="services__list swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="services__item">
+                    <div class="services__item-show">
+                      <img class="services__item-img" src="./img/svg/yoga-mat.svg" alt="towels icon">
+                      <h3 class="services__item-title">Free Rugs</h3>
+                      <p class="services__item-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item-button">Learn More</button>
+                    </div>
+                    <div class="services__item__hide">
+                      <h3 class="services__item__hide-title">Get Started With Your Free Trial</h3>
+                      <p class="services__item__hide-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra
+                        nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item__hide-button">Get Started Today</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="services__item">
+                    <div class="services__item-show">
+                      <img class="services__item-img" src="./img/svg/material-symbols_spa.svg"
+                        alt="material symbols spa icon">
+                      <h3 class="services__item-title">Spa Area</h3>
+                      <p class="services__item-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item-button">Learn More</button>
+                    </div>
+                    <div class="services__item__hide">
+                      <h3 class="services__item__hide-title">Get Started With Your Free Trial</h3>
+                      <p class="services__item__hide-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra
+                        nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item__hide-button">Get Started Today</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="services__item">
+                    <div class="services__item-show">
+                      <img class="services__item-img" src="./img/svg/towels.svg" alt="towels icon">
+                      <h3 class="services__item-title">Changing Rooms</h3>
+                      <p class="services__item-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item-button">Learn More</button>
+                    </div>
+                    <div class="services__item__hide">
+                      <h3 class="services__item__hide-title">Get Started With Your Free Trial</h3>
+                      <p class="services__item__hide-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra
+                        nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item__hide-button">Get Started Today</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="services__item">
+                    <div class="services__item-show">
+                      <img class="services__item-img" src="./img/svg/iconoir_yoga.svg" alt="towels icon">
+                      <h3 class="services__item-title">Free Lessons</h3>
+                      <p class="services__item-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item-button">Learn More</button>
+                    </div>
+                    <div class="services__item__hide">
+                      <h3 class="services__item__hide-title">Get Started With Your Free Trial</h3>
+                      <p class="services__item__hide-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra
+                        nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item__hide-button">Get Started Today</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="services__item">
+                    <div class="services__item-show">
+                      <img class="services__item-img" src="./img/svg/yoga-mat.svg" alt="towels icon">
+                      <h3 class="services__item-title">Free Rugs</h3>
+                      <p class="services__item-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item-button">Learn More</button>
+                    </div>
+                    <div class="services__item__hide">
+                      <h3 class="services__item__hide-title">Get Started With Your Free Trial</h3>
+                      <p class="services__item__hide-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra
+                        nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item__hide-button">Get Started Today</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="services__item">
+                    <div class="services__item-show">
+                      <img class="services__item-img" src="./img/svg/towels.svg" alt="towels icon">
+                      <h3 class="services__item-title">Changing Rooms</h3>
+                      <p class="services__item-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item-button">Learn More</button>
+                    </div>
+                    <div class="services__item__hide">
+                      <h3 class="services__item__hide-title">Get Started With Your Free Trial</h3>
+                      <p class="services__item__hide-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra
+                        nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item__hide-button">Get Started Today</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="services__item">
+                    <div class="services__item-show">
+
+                      <img class="services__item-img" src="./img/svg/iconoir_yoga.svg" alt="towels icon">
+                      <h3 class="services__item-title">Free Lessons</h3>
+                      <p class="services__item-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item-button">Learn More</button>
+                    </div>
+                    <div class="services__item__hide">
+                      <h3 class="services__item__hide-title">Get Started With Your Free Trial</h3>
+                      <p class="services__item__hide-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra
+                        nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item__hide-button">Get Started Today</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="swiper-slide">
+                  <div class="services__item">
+                    <div class="services__item-show">
+
+                      <img class="services__item-img" src="./img/svg/towels.svg" alt="towels icon">
+                      <h3 class="services__item-title">Changing Rooms</h3>
+                      <p class="services__item-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item-button">Learn More</button>
+                    </div>
+                    <div class="services__item__hide">
+                      <h3 class="services__item__hide-title">Get Started With Your Free Trial</h3>
+                      <p class="services__item__hide-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra
+                        nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item__hide-button">Get Started Today</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="services__item">
+                    <div class="services__item-show">
+
+                      <img class="services__item-img" src="./img/svg/iconoir_yoga.svg" alt="towels icon">
+                      <h3 class="services__item-title">Free Lessons</h3>
+                      <p class="services__item-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item-button">Learn More</button>
+                    </div>
+                    <div class="services__item__hide">
+                      <h3 class="services__item__hide-title">Get Started With Your Free Trial</h3>
+                      <p class="services__item__hide-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra
+                        nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item__hide-button">Get Started Today</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="services__item">
+                    <div class="services__item-show">
+
+                      <img class="services__item-img" src="./img/svg/yoga-mat.svg" alt="towels icon">
+                      <h3 class="services__item-title">Free Rugs</h3>
+                      <p class="services__item-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item-button">Learn More</button>
+                    </div>
+                    <div class="services__item__hide">
+                      <h3 class="services__item__hide-title">Get Started With Your Free Trial</h3>
+                      <p class="services__item__hide-subtitle">Libero nunc facilisis auctor diam suspendisse pharetra
+                        nisi.
+                        Mauris
+                        ornare imperdiet.</p>
+                      <button class="services__item__hide-button">Get Started Today</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="swiper-button">
+                <div class="swiper-button-prev">
+                  <button>
+                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none">
+                      <g>
+                        <path
+                          d="M22.5 45C10.0588 45 0 34.9412 0 22.5C0 10.0588 10.0588 0 22.5 0C34.9412 0 45 10.0588 45 22.5C45 34.9412 34.9412 45 22.5 45ZM22.5 2.64706C11.5147 2.64706 2.64706 11.5147 2.64706 22.5C2.64706 33.4853 11.5147 42.3529 22.5 42.3529C33.4853 42.3529 42.3529 33.4853 42.3529 22.5C42.3529 11.5147 33.4853 2.64706 22.5 2.64706Z"
+                          fill="#5F6F52" />
+                        <path
+                          d="M22.8971 35.3383L10.0588 22.5001L22.8971 9.66187L24.75 11.5148L13.7647 22.5001L24.75 33.4854L22.8971 35.3383Z"
+                          fill="#5F6F52" />
+                        <path d="M11.9119 21.1765H34.4119V23.8236H11.9119V21.1765Z" fill="#5F6F52" />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <div class="swiper-button-next">
+                  <button>
+                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none">
+                      <g>
+                        <path
+                          d="M22.5 0C34.9412 0 45 10.0588 45 22.5C45 34.9412 34.9412 45 22.5 45C10.0588 45 0 34.9412 0 22.5C0 10.0588 10.0588 0 22.5 0ZM22.5 42.3529C33.4853 42.3529 42.3529 33.4853 42.3529 22.5C42.3529 11.5147 33.4853 2.64706 22.5 2.64706C11.5147 2.64706 2.64706 11.5147 2.64706 22.5C2.64706 33.4853 11.5147 42.3529 22.5 42.3529Z"
+                          fill="#5F6F52" />
+                        <path
+                          d="M22.1029 9.66166L34.9412 22.4999L22.1029 35.3381L20.25 33.4852L31.2353 22.4999L20.25 11.5146L22.1029 9.66166Z"
+                          fill="#5F6F52" />
+                        <path d="M33.0881 23.8235L10.5881 23.8235V21.1764L33.0881 21.1764V23.8235Z" fill="#5F6F52" />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="decor">
+        <img src="./img/svg/services_fon.jpg" alt="decor">
+      </div>
+      <section class="classes">
+        <div class="container-inner">
+          <h2 class="classes__title title">Latest Classes</h2>
+          <p class="classes__subtitle subtitle">
+            Sub Heading To Explain More
+          </p>
+          <div data-tabs="tab" class="classes__wrapper tabs">
+            <ul class="classes__tabs tabs__nav">
+              <li class="classes__item tabs__nav-item">
+                <button class="classes__link tabs__nav-btn" type="button">Beginners Yoga</button>
+              </li>
+              <li class="classes__item tabs__nav-item">
+                <button class="classes__link tabs__nav-btn" type="button">Stretching</button>
+              </li>
+              <li class="classes__item tabs__nav-item">
+                <button class="classes__link tabs__nav-btn" type="button">Fly-Yoga</button>
+              </li>
+              <li class="classes__item tabs__nav-item">
+                <button class="classes__link tabs__nav-btn" type="button">Yin Yoga</button>
+              </li>
+              <li class="classes__item tabs__nav-item">
+                <button class="classes__link tabs__nav-btn" type="button">Flo Yoga</button>
+              </li>
+            </ul>
+            <ul class="classes__list tabs__content">
+
+              <li class="tabs__panel">
+                <div class="classes__content">
+                  <img class="classes__content-img" src="./img/image-left.jpg" alt="classes image-left">
+                  <div class="classes__content-right">
+                    <h3 class="classes__content-title">
+                      Beginners Yoga
+                    </h3>
+                    <p class="classes__content-subtitle">Lorem ipsum dolor sit amet consectetur.
+                      Sed sagittis dis vitae suspendisse adipiscing
+                      magna arcu et nibh. Felis lectus sit aliquet gravida pretium dui netus et.
+                      Lacus in molestie in diam lorem.</p>
+                    <ul class="classes__content-info">
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          1
+                        </div>
+                        <h4 class="classes__content-item-title">Free Rugs</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          2
+                        </div>
+                        <h4 class="classes__content-item-title">Changing Room</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          3
+                        </div>
+                        <h4 class="classes__content-item-title">Free Rugs</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          4
+                        </div>
+                        <h4 class="classes__content-item-title">Changing Room</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </li>
+              <li class="tabs__panel">
+                <div class="classes__content">
+                  <img class="classes__content-img" src="./img/image-left.jpg" alt="classes image-left">
+                  <div class="classes__content-right">
+                    <h3 class="classes__content-title">
+                      Stretching
+                    </h3>
+                    <p class="classes__content-subtitle">Lorem ipsum dolor sit amet consectetur.
+                      Sed sagittis dis vitae suspendisse adipiscing
+                      magna arcu et nibh. Felis lectus sit aliquet gravida pretium dui netus et.
+                      Lacus in molestie in diam lorem.</p>
+                    <ul class="classes__content-info">
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          1
+                        </div>
+                        <h4 class="classes__content-item-title">Free Rugs</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          2
+                        </div>
+                        <h4 class="classes__content-item-title">Changing Room</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          3
+                        </div>
+                        <h4 class="classes__content-item-title">Free Rugs</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          4
+                        </div>
+                        <h4 class="classes__content-item-title">Changing Room</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </li>
+              <li class="tabs__panel">
+                <div class="classes__content">
+                  <img class="classes__content-img" src="./img/image-left.jpg" alt="classes image-left">
+                  <div class="classes__content-right">
+                    <h3 class="classes__content-title">
+                      Fly-Yoga
+                    </h3>
+                    <p class="classes__content-subtitle">Lorem ipsum dolor sit amet consectetur.
+                      Sed sagittis dis vitae suspendisse adipiscing
+                      magna arcu et nibh. Felis lectus sit aliquet gravida pretium dui netus et.
+                      Lacus in molestie in diam lorem.</p>
+                    <ul class="classes__content-info">
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          1
+                        </div>
+                        <h4 class="classes__content-item-title">Free Rugs</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          2
+                        </div>
+                        <h4 class="classes__content-item-title">Changing Room</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          3
+                        </div>
+                        <h4 class="classes__content-item-title">Free Rugs</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          4
+                        </div>
+                        <h4 class="classes__content-item-title">Changing Room</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </li>
+              <li class="tabs__panel">
+                <div class="classes__content">
+                  <img class="classes__content-img" src="./img/image-left.jpg" alt="classes image-left">
+                  <div class="classes__content-right">
+                    <h3 class="classes__content-title">
+                      Yin Yoga
+                    </h3>
+                    <p class="classes__content-subtitle">Lorem ipsum dolor sit amet consectetur.
+                      Sed sagittis dis vitae suspendisse adipiscing
+                      magna arcu et nibh. Felis lectus sit aliquet gravida pretium dui netus et.
+                      Lacus in molestie in diam lorem.</p>
+                    <ul class="classes__content-info">
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          1
+                        </div>
+                        <h4 class="classes__content-item-title">Free Rugs</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          2
+                        </div>
+                        <h4 class="classes__content-item-title">Changing Room</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          3
+                        </div>
+                        <h4 class="classes__content-item-title">Free Rugs</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          4
+                        </div>
+                        <h4 class="classes__content-item-title">Changing Room</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </li>
+              <li class="tabs__panel">
+                <div class="classes__content">
+                  <img class="classes__content-img" src="./img/image-left.jpg" alt="classes image-left">
+                  <div class="classes__content-right">
+                    <h3 class="classes__content-title">
+                      Flo Yoga
+                    </h3>
+                    <p class="classes__content-subtitle">Lorem ipsum dolor sit amet consectetur.
+                      Sed sagittis dis vitae suspendisse adipiscing
+                      magna arcu et nibh. Felis lectus sit aliquet gravida pretium dui netus et.
+                      Lacus in molestie in diam lorem.</p>
+                    <ul class="classes__content-info">
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          1
+                        </div>
+                        <h4 class="classes__content-item-title">Free Rugs</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          2
+                        </div>
+                        <h4 class="classes__content-item-title">Changing Room</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          3
+                        </div>
+                        <h4 class="classes__content-item-title">Free Rugs</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                      <li class="classes__content-item">
+                        <div class="classes__content-item-num">
+                          4
+                        </div>
+                        <h4 class="classes__content-item-title">Changing Room</h4>
+                        <p class="classes__content-item-subtitle">Felis lectus sit aliquet gravida pretium dui netus et.
+                          Lacus in molestie in diam lorem.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </li>
+            </ul>
+            <button class="classes__btn button">Get A Free Trial</button>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <div class="container-inner">
+          <h2 class="team__title title">
+            Our Great Team
+          </h2>
+          <p class="team__subtitle subtitle">
+            Sub Heading To Explain More
+          </p>
+          <p class="team__text">At arcu neque aliquet laoreet. Id egestas mauris tincidunt ut nulla cras.
+            Non eget sem curabitur vehicula diam integer. Magna tortor dignissim imperdiet pulvinar ante sed metus
+            consequat in.
+            Feugiat id ipsum lacinia nec nunc odio pellentesque.</p>
+          <ul class="team__list">
+            <li class="team__item">
+              <img class="team__img" src="./img/team_1.jpg" alt="team image">
+            </li>
+            <li class="team__item">
+              <img class="team__img" src="./img/team_2.jpg" alt="team image">
+            </li>
+            <li class="team__item">
+              <img class="team__img" src="./img/team_3.jpg" alt="team image">
+            </li>
+            <li class="team__item">
+              <img class="team__img" src="./img/team_4.jpg" alt="team image">
+            </li>
+            <li class="team__item">
+              <img class="team__img" src="./img/team_5.jpg" alt="team image">
+            </li>
+            <li class="team__item">
+              <img class="team__img" src="./img/team_6.jpg" alt="team image">
+            </li>
+          </ul>
+          <button class="team__btn button">Learn More About Us</button>
+        </div>
+      </section>
+      <section class="call-action">
+        <div class="cotainer">
+          <div class="call-action__wrapper">
+            <div class="call-action__content">
+              <h2 class="call-action__title">
+                Free 30-Day Membership
+              </h2>
+              <p class="call-action__subtitle">
+                At arcu neque aliquet laoreet. Id egestas mauris tincidunt ut nulla cras.
+                Non eget sem curabitur vehicula diam integer. Magna tortor dignissim imperdiet pulvinar ante sed metus
+                consequat in.
+                Feugiat id ipsum lacinia nec nunc odio pellentesque.
+              </p>
+              <div class="call-action__buttons">
+                <button class="call-action__book button">Book A Session</button>
+                <button class="call-action__contact button__contact">Contact Us</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="footer__top">
+    <div class="container-inner">
+      <div class="footer__top-wrapper">
+        <a class="logo" href="index.html">
+          <img src="./img/svg/primary-logo.svg" alt="logo">
+        </a>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="index.html">Home</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="index.html">Services</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Our Facility</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">About</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container-inner ">
+      <div class="footer__bottom-wrapper">
+        <ul class="footer__bottom-list">
+          <li class="footer__bottom-item">
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="./img/svg/instagram.svg" alt="instagram icon">
+            </a>
+          </li>
+          <li class="footer__bottom-item">
+            <a href="#" target="_blank">
+              <img src="./img/svg/park.svg" alt="park icon">
+            </a>
+          </li>
+          <li class="footer__bottom-item">
+            <a href="https://uk-ua.facebook.com" target="_blank">
+              <img src="./img/svg/facebook.svg" alt="facebook icon">
+            </a>
+          </li>
+          <li class="footer__bottom-item">
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="./img/svg/youtube.svg" alt="youtube icon">
+            </a>
+          </li>
+        </ul>
+        <p class="copyright">Copyright 2024 <span>|</span> All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+  </div>
+</body>
+
+</html>
