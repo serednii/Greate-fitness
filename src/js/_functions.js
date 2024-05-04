@@ -54,41 +54,12 @@ console.log(tabs)
 import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 Swiper.use([Navigation, Pagination, Autoplay]);
 const swiper = new Swiper(".swiper-container", {
-  // breakpoints: {
-  //   // when window width is >= 320px
-  //   320: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 20
-  //   },
-  //   // when window width is >= 480px
-  //   480: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 30
-  //   },
-  //   // when window width is >= 640px
-  //   640: {
-  //     slidesPerView: 4,
-  //     spaceBetween: 40
-  //   }
-  // },
-  // centerInsufficientSlides: true,
-  // centeredSlides: true,
-  slidesPerView: "auto",
-  spaceBetween: 28,
-  // loop: true, // Включення циклічної прокрутки
-  // centeredSlides: true, // Позиціонує активний слайд по центру
-  // allowSlidePrev: true,
-  // allowSlideNext: true,
-  // autoplay: {
-  //   delay: 1000,
-  // },
+  slidesPerView: auto,
+  spaceBetween: 45,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  // grid: {
-  //   rows: 3,
-  // },
 });
 
 // Подключение анимаций по скроллу
@@ -135,4 +106,5 @@ const swiper = new Swiper(".swiper-container", {
 // validateForms('#form', rules1, afterForm);
 
 import './functions/my-validate-form';
-import './functions/setting';
+import './functions/setting'; import { auto } from '@popperjs/core';
+
