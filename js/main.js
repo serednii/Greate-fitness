@@ -151,6 +151,14 @@ console.log(tabs);
 
 swiper__WEBPACK_IMPORTED_MODULE_2__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_2__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_2__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_2__.Autoplay]);
 const swiper = new swiper__WEBPACK_IMPORTED_MODULE_2__["default"](".swiper-container", {
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 640px
+    991: {
+      slidesPerView: 2,
+      spaceBetween: 44
+    }
+  },
   slidesPerView: _popperjs_core__WEBPACK_IMPORTED_MODULE_3__.auto,
   spaceBetween: 45,
   navigation: {

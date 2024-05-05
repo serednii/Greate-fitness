@@ -1211,6 +1211,9 @@ img {
   .site-container .services .swiper-wrapper {
     margin-left: 0;
   }
+  .site-container .services .swiper-slide {
+    max-width: initial;
+  }
 }
 @media (max-width: 450px) {
   .site-container .services__item {
