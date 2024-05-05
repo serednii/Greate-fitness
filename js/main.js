@@ -151,16 +151,27 @@ console.log(tabs);
 
 swiper__WEBPACK_IMPORTED_MODULE_2__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_2__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_2__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_2__.Autoplay]);
 const swiper = new swiper__WEBPACK_IMPORTED_MODULE_2__["default"](".swiper-container", {
+  slidesPerView: 1,
+  spaceBetween: 0,
   // Responsive breakpoints
   breakpoints: {
     // when window width is >= 640px
-    991: {
+
+    678: {
       slidesPerView: 2,
-      spaceBetween: 44
+      spaceBetween: 0
+    },
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 0
+    },
+    1199: {
+      slidesPerView: _popperjs_core__WEBPACK_IMPORTED_MODULE_3__.auto,
+      spaceBetween: 40
     }
   },
-  slidesPerView: _popperjs_core__WEBPACK_IMPORTED_MODULE_3__.auto,
-  spaceBetween: 45,
+  // slidesPerView: auto,
+  // spaceBetween: 45,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'

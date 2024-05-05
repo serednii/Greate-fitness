@@ -6,8 +6,8 @@ html {
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
@@ -1216,10 +1216,6 @@ img {
   }
 }
 @media (max-width: 450px) {
-  .site-container .services__item {
-    padding: 20px;
-    width: 260px;
-  }
   .site-container .services__item__hide {
     left: 3px;
     top: -10px;
@@ -1241,10 +1237,6 @@ img {
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 23px;
-  }
-  .site-container .services__item {
-    padding: 20px;
-    margin-right: 38px !important;
   }
   .site-container .services__item__hide {
     left: 1px;
