@@ -1141,7 +1141,10 @@ img {
 }
 .site-container .services__item__hide {
   position: absolute;
-  left: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   top: -25px;
   border-radius: 30px;
   padding: 95px 35px;
