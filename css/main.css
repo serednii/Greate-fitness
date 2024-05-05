@@ -1,3 +1,66 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #8d8d8d;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
 /* stylelint-disable */
 @font-face {
   font-family: "Inter-Medium";
@@ -389,8 +452,7 @@
 }
 
 html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  scrollbar-gutter: stable;
 }
 
 .page__body {
@@ -524,6 +586,10 @@ img {
   width: 1px;
   height: 1px;
   clip: rect(0 0 0 0);
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .container {
@@ -756,6 +822,12 @@ img {
     height: calc(var(--index) * 1.2);
   }
 }
+@media (max-width: 767.98px) {
+  .logo {
+    width: 100px;
+    height: 20px;
+  }
+}
 @-webkit-keyframes AnimationLogo {
   0% {
     scale: 1;
@@ -886,6 +958,8 @@ img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  overflow: auto;
+  max-height: 100vh;
   gap: 45px;
 }
 

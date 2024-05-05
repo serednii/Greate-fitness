@@ -318,10 +318,12 @@ __webpack_require__.r(__webpack_exports__);
       burger?.setAttribute('aria-expanded', 'true');
       burger?.setAttribute('aria-label', 'Закрыть меню');
       // disableScroll()
+      document.body.classList.add('overflow-hidden');
     } else {
       burger?.setAttribute('aria-expanded', 'false');
       burger?.setAttribute('aria-label', 'Открыть меню');
       // enableScroll()
+      document.body.classList.remove('overflow-hidden');
     }
   });
   overlay?.addEventListener('click', e => {
@@ -340,6 +342,7 @@ __webpack_require__.r(__webpack_exports__);
     menu.classList.remove('menu--active');
     overlay?.classList.remove('overlay--active');
     // enableScroll()
+    document.body.classList.remove('overflow-hidden');
   }
 })();
 
