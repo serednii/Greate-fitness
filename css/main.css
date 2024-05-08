@@ -961,7 +961,6 @@ img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  overflow: auto;
   max-height: 100vh;
   gap: 45px;
 }
@@ -1052,6 +1051,7 @@ img {
     top: 0;
     z-index: 100;
     display: block;
+    overflow: auto;
     padding-left: 15px;
     width: calc(100vw - 20px);
     background-color: var(--white);
